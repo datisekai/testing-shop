@@ -49,16 +49,17 @@ public class MySQLConnection {
             try{
 //                tạo connet thông qua url
                 this.connect = DriverManager.getConnection(url, this.Username, this.Password);
+                System.out.println("Connect to database");
             }        
             catch (SQLException e) {
-                throw new Exception("không thể kết nối tới Database" + url +e.getMessage());
+                throw new Exception(e.getMessage());
             }
         }
         
         return this.connect;
     }
     
-//    tạo statement để thực thi Queury
+//    tạo statement để thực thi Query
     protected Statement getStatement() throws Exception {
 //        kiểm tra stament đã đóng chưa
         if (this.statement == null) {
@@ -78,7 +79,7 @@ public class MySQLConnection {
             this.resultSet = getStatement().executeQuery(Query);
             
         } catch (Exception e) {
-            throw new Exception("Error excuteQuery " + e.getMessage());
+            throw new Exception(e.getMessage());
         }
         
         return this.resultSet;
