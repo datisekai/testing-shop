@@ -24,6 +24,10 @@ public class SanPhamBUS {
         spDAO = new SanPhamDAO();
         list_SP = spDAO.docDB();
     }
+    
+    public int getSize() {
+        return list_SP.size();
+    }
 
     public ArrayList<SanPhamDTO> getList_SP() {
         return list_SP;
