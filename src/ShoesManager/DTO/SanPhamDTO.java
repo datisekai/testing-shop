@@ -115,5 +115,8 @@ public class SanPhamDTO {
         return "SanPhamDTO{" + "strMaGiay=" + strMaGiay + ", strTenGiay=" + strTenGiay + ", strDoiTuongSD=" + strDoiTuongSD + ", strChatLieu=" + strChatLieu + ", strMaLoai=" + strMaLoai + ", strMaxx=" + strMaxx + ", strMaMau=" + strMaMau + ", strMaThuongHieu=" + strMaThuongHieu + ", iSoLuong=" + iSoLuong + ", iGia=" + iGia + ", iSize=" + iSize + '}';
     }
     
+    public Object[] toObject() {
+        return new Object[] { this.strMaGiay, this.strTenGiay, this.iSoLuong, this.iGia, this.iSize, this.strDoiTuongSD, this.strChatLieu, this.strMaLoai, this.strMaxx, this.strMaMau, this.strMaThuongHieu};
+    }
     
 }
