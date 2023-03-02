@@ -306,19 +306,19 @@ public class Login extends JFrame implements ActionListener {
     }
 
 //    private
-    private Font Arial;
-    private TaiKhoanBUS list_TK;
-    private Color colorPanel_L, colorPanel_R;
-    private JPanel pLeft, pRight, pRadioButtons;
-    private JButton btnExit;
-    private ImageIcon iconClose, iconLogo;
-    private JLabel lblLogo, lblName, lblPass, lblLogin;
-    private JLabel lblImage;
-    private JTextField tfName;
-    private JPasswordField pfPass;
-    private JRadioButton[] radiobuttons;
-    private ButtonGroup buttongroup;
-    private Timer time;
+    public Font Arial;
+    public TaiKhoanBUS list_TK;
+    public Color colorPanel_L, colorPanel_R;
+    public JPanel pLeft, pRight, pRadioButtons;
+    public JButton btnExit;
+    public ImageIcon iconClose, iconLogo;
+    public JLabel lblLogo, lblName, lblPass, lblLogin;
+    public JLabel lblImage;
+    public JTextField tfName;
+    public JPasswordField pfPass;
+    public JRadioButton[] radiobuttons;
+    public ButtonGroup buttongroup;
+    public Timer time;
 //    private TaiKhoanBUS list_TK;
 //    End.
 }

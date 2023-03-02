@@ -23,7 +23,7 @@ public class KhuyenMai extends javax.swing.JFrame  implements MouseListener{
         pThongTin_ThongTin.setVisible(true);
         // các hàm xử lý sau khi vào
         kiemTraCapBac();
-        colordefault();
+//        colordefault();
         anHienCacNut(false);
         
         // hiển thị các dữ liệu table
@@ -1883,18 +1883,18 @@ public class KhuyenMai extends javax.swing.JFrame  implements MouseListener{
 
     }   
     
-    public void colordefault(){
-        Color color;
-        color = new Color(250, 160, 100);
-        if (Memory.colorThemes.getRGB() == color.getRGB() )
-            rdbtnThongTin_MauCam.setSelected(true);
-        color = new Color(0, 0, 0);
-        if (Memory.colorThemes.getRGB() == color.getRGB() )
-            rdbtnThongTin_MauDen.setSelected(true);
-        color = new Color(255, 255, 255);
-        if (Memory.colorThemes.getRGB() == color.getRGB() )
-            rdbtnThongTin_Mautrang.setSelected(true);
-    }
+//    public void colordefault(){
+//        Color color;
+//        color = new Color(250, 160, 100);
+//        if (Memory.colorThemes.getRGB() == color.getRGB() )
+//            rdbtnThongTin_MauCam.setSelected(true);
+//        color = new Color(0, 0, 0);
+//        if (Memory.colorThemes.getRGB() == color.getRGB() )
+//            rdbtnThongTin_MauDen.setSelected(true);
+//        color = new Color(255, 255, 255);
+//        if (Memory.colorThemes.getRGB() == color.getRGB() )
+//            rdbtnThongTin_Mautrang.setSelected(true);
+//    }
     /**
      * @param args the command line arguments
      */
@@ -1935,84 +1935,84 @@ public class KhuyenMai extends javax.swing.JFrame  implements MouseListener{
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu MenuMauNen;
-    private javax.swing.JButton btnChiTiet_Sua;
-    private javax.swing.JButton btnChiTiet_TaoMoi;
-    private javax.swing.JButton btnChiTiet_Them;
-    private javax.swing.JButton btnChiTiet_Xoa;
-    private javax.swing.JButton btnThongTin_Sua1;
-    private javax.swing.JButton btnThongTin_Them;
-    private javax.swing.JButton btnThongTin_Trong;
-    private javax.swing.JButton btnThongTin_Xoa;
-    private javax.swing.JButton btnTimKiem_HuyTimKiem;
-    private javax.swing.JButton btnTimKiem_TimKiem;
-    private javax.swing.JButton btnTimKiem_Trong1;
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.ButtonGroup buttonGroup_MauNen;
-    private com.toedter.calendar.JDateChooser calendarThongTin;
-    private com.toedter.calendar.JDateChooser calendarThongTin1;
-    private javax.swing.JComboBox<String> cbbThongTin_DK;
-    private javax.swing.JComboBox<String> cbbThongTin_Loai;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JLabel lblChiTiet_3cham;
-    private javax.swing.JLabel lblChiTiet_3cham1;
-    private javax.swing.JLabel lblChiTiet_3cham2;
-    private javax.swing.JLabel lblChiTiet_ChiTietHoaDon;
-    private javax.swing.JLabel lblChiTiet_MaHD;
-    private javax.swing.JLabel lblChiTiet_MaSP;
-    private javax.swing.JLabel lblChiTiet_MaSP1;
-    private javax.swing.JLabel lblChiTiet_SoLuong2;
-    private javax.swing.JLabel lblChiTiet_Tatca;
-    private javax.swing.JLabel lblChiTiet_TiLeKM;
-    private javax.swing.JLabel lblMuiTen;
-    private javax.swing.JLabel lblMuiTen1;
-    private javax.swing.JLabel lblThongTin_MaHD;
-    private javax.swing.JLabel lblThongTin_MaHD1;
-    private javax.swing.JLabel lblThongTin_MaKH;
-    private javax.swing.JLabel lblThongTin_MaKM;
-    private javax.swing.JLabel lblThongTin_MaNV;
-    private javax.swing.JLabel lblThongTin_MaNV1;
-    private javax.swing.JLabel lblThongTin_NgayBan;
-    private javax.swing.JLabel lblThongTin_NgayBan1;
-    private javax.swing.JLabel lblThongTin_ThongTin;
-    private javax.swing.JLabel lblThongTin_TimKiem;
-    private javax.swing.JMenu menuTaiKhoan;
-    private javax.swing.JMenuItem menuTaiKhoan_DangXuat;
-    private javax.swing.JMenuItem menuTaiKhoan_ThongTin;
-    private javax.swing.JMenu menuThanhCongcu;
-    private javax.swing.JMenu menuThoat;
-    private javax.swing.JMenu menuTroVe;
-    private javax.swing.JMenuBar menubar;
-    private javax.swing.JPanel pCenter;
-    private javax.swing.JPanel pChiTiet;
-    private javax.swing.JPanel pChiTietSanPham;
-    private javax.swing.JPanel pChiTietTimKiem;
-    private javax.swing.JPanel pThongTin;
-    private javax.swing.JPanel pThongTin_ThongTin;
-    private javax.swing.JPanel pThongTin_TimKiem;
-    private javax.swing.JPanel pTop;
-    private javax.swing.JRadioButtonMenuItem rdbtnThongTin_MauCam;
-    private javax.swing.JRadioButtonMenuItem rdbtnThongTin_MauDen;
-    private javax.swing.JRadioButtonMenuItem rdbtnThongTin_Mautrang;
-    private javax.swing.JTable tblThongTin;
-    private javax.swing.JTable tblThongTin1;
-    private javax.swing.JTextField tfChiTiet_MaKM;
-    private javax.swing.JTextField tfChiTiet_MaSP;
-    private javax.swing.JTextField tfChiTiet_MaSP2;
-    private javax.swing.JTextField tfChiTiet_MaSP3;
-    private javax.swing.JTextField tfChiTiet_SL2;
-    private javax.swing.JTextField tfChiTiet_SL3;
-    private javax.swing.JTextField tfChiTiet_TiLeKM;
-    private javax.swing.JTextField tfThongTin_MAKM;
-    private javax.swing.JTextField tfThongTin_TenKM;
-    private javax.swing.JTextField tfTimKiem_MaKM;
-    private javax.swing.JTextField tfTimKiem_TenCT;
+    public javax.swing.JMenu MenuMauNen;
+    public javax.swing.JButton btnChiTiet_Sua;
+    public javax.swing.JButton btnChiTiet_TaoMoi;
+    public javax.swing.JButton btnChiTiet_Them;
+    public javax.swing.JButton btnChiTiet_Xoa;
+    public javax.swing.JButton btnThongTin_Sua1;
+    public javax.swing.JButton btnThongTin_Them;
+    public javax.swing.JButton btnThongTin_Trong;
+    public javax.swing.JButton btnThongTin_Xoa;
+    public javax.swing.JButton btnTimKiem_HuyTimKiem;
+    public javax.swing.JButton btnTimKiem_TimKiem;
+    public javax.swing.JButton btnTimKiem_Trong1;
+    public javax.swing.ButtonGroup buttonGroup1;
+    public javax.swing.ButtonGroup buttonGroup2;
+    public javax.swing.ButtonGroup buttonGroup3;
+    public javax.swing.ButtonGroup buttonGroup_MauNen;
+    public com.toedter.calendar.JDateChooser calendarThongTin;
+    public com.toedter.calendar.JDateChooser calendarThongTin1;
+    public javax.swing.JComboBox<String> cbbThongTin_DK;
+    public javax.swing.JComboBox<String> cbbThongTin_Loai;
+    public javax.swing.JButton jButton4;
+    public javax.swing.JButton jButton5;
+    public javax.swing.JButton jButton6;
+    public javax.swing.JScrollPane jScrollPane2;
+    public javax.swing.JScrollPane jScrollPane3;
+    public javax.swing.JLabel lblChiTiet_3cham;
+    public javax.swing.JLabel lblChiTiet_3cham1;
+    public javax.swing.JLabel lblChiTiet_3cham2;
+    public javax.swing.JLabel lblChiTiet_ChiTietHoaDon;
+    public javax.swing.JLabel lblChiTiet_MaHD;
+    public javax.swing.JLabel lblChiTiet_MaSP;
+    public javax.swing.JLabel lblChiTiet_MaSP1;
+    public javax.swing.JLabel lblChiTiet_SoLuong2;
+    public javax.swing.JLabel lblChiTiet_Tatca;
+    public javax.swing.JLabel lblChiTiet_TiLeKM;
+    public javax.swing.JLabel lblMuiTen;
+    public javax.swing.JLabel lblMuiTen1;
+    public javax.swing.JLabel lblThongTin_MaHD;
+    public javax.swing.JLabel lblThongTin_MaHD1;
+    public javax.swing.JLabel lblThongTin_MaKH;
+    public javax.swing.JLabel lblThongTin_MaKM;
+    public javax.swing.JLabel lblThongTin_MaNV;
+    public javax.swing.JLabel lblThongTin_MaNV1;
+    public javax.swing.JLabel lblThongTin_NgayBan;
+    public javax.swing.JLabel lblThongTin_NgayBan1;
+    public javax.swing.JLabel lblThongTin_ThongTin;
+    public javax.swing.JLabel lblThongTin_TimKiem;
+    public javax.swing.JMenu menuTaiKhoan;
+    public javax.swing.JMenuItem menuTaiKhoan_DangXuat;
+    public javax.swing.JMenuItem menuTaiKhoan_ThongTin;
+    public javax.swing.JMenu menuThanhCongcu;
+    public javax.swing.JMenu menuThoat;
+    public javax.swing.JMenu menuTroVe;
+    public javax.swing.JMenuBar menubar;
+    public javax.swing.JPanel pCenter;
+    public javax.swing.JPanel pChiTiet;
+    public javax.swing.JPanel pChiTietSanPham;
+    public javax.swing.JPanel pChiTietTimKiem;
+    public javax.swing.JPanel pThongTin;
+    public javax.swing.JPanel pThongTin_ThongTin;
+    public javax.swing.JPanel pThongTin_TimKiem;
+    public javax.swing.JPanel pTop;
+    public javax.swing.JRadioButtonMenuItem rdbtnThongTin_MauCam;
+    public javax.swing.JRadioButtonMenuItem rdbtnThongTin_MauDen;
+    public javax.swing.JRadioButtonMenuItem rdbtnThongTin_Mautrang;
+    public javax.swing.JTable tblThongTin;
+    public javax.swing.JTable tblThongTin1;
+    public javax.swing.JTextField tfChiTiet_MaKM;
+    public javax.swing.JTextField tfChiTiet_MaSP;
+    public javax.swing.JTextField tfChiTiet_MaSP2;
+    public javax.swing.JTextField tfChiTiet_MaSP3;
+    public javax.swing.JTextField tfChiTiet_SL2;
+    public javax.swing.JTextField tfChiTiet_SL3;
+    public javax.swing.JTextField tfChiTiet_TiLeKM;
+    public javax.swing.JTextField tfThongTin_MAKM;
+    public javax.swing.JTextField tfThongTin_TenKM;
+    public javax.swing.JTextField tfTimKiem_MaKM;
+    public javax.swing.JTextField tfTimKiem_TenCT;
     // End of variables declaration//GEN-END:variables
 
     
