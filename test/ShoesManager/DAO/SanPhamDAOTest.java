@@ -4,7 +4,7 @@
  */
 package ShoesManager.DAO;
 
-import ShoesManager.DTO.TaiKhoanDTO;
+import ShoesManager.DTO.SanPhamDTO;
 import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author PC
  */
-public class TaiKhoanDAOTest {
+public class SanPhamDAOTest {
     
-    public TaiKhoanDAOTest() {
+    public SanPhamDAOTest() {
     }
     
     @BeforeClass
@@ -39,90 +39,86 @@ public class TaiKhoanDAOTest {
     }
 
     /**
-     * Test of docDB method, of class TaiKhoanDAO.
+     * Test of docDB method, of class SanPhamDAO.
      */
     @Test
     public void testDocDB_String_String() throws Exception {
         System.out.println("docDB");
         String condition = "";
         String orderBy = "";
-        TaiKhoanDAO instance = new TaiKhoanDAO();
-        ArrayList<TaiKhoanDTO> expResult = null;
-        ArrayList<TaiKhoanDTO> result = instance.docDB(condition, orderBy);
+        SanPhamDAO instance = new SanPhamDAO();
+        ArrayList<SanPhamDTO> expResult = null;
+        ArrayList<SanPhamDTO> result = instance.docDB(condition, orderBy);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of docDB method, of class TaiKhoanDAO.
+     * Test of docDB method, of class SanPhamDAO.
      */
     @Test
     public void testDocDB_String() throws Exception {
         System.out.println("docDB");
         String condition = "";
-        TaiKhoanDAO instance = new TaiKhoanDAO();
-        ArrayList<TaiKhoanDTO> expResult = null;
-        ArrayList<TaiKhoanDTO> result = instance.docDB(condition);
+        SanPhamDAO instance = new SanPhamDAO();
+        ArrayList<SanPhamDTO> expResult = null;
+        ArrayList<SanPhamDTO> result = instance.docDB(condition);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of docDB method, of class TaiKhoanDAO.
+     * Test of docDB method, of class SanPhamDAO.
      */
     @Test
     public void testDocDB_0args() throws Exception {
         System.out.println("docDB");
-        TaiKhoanDAO instance = new TaiKhoanDAO();
-        ArrayList<TaiKhoanDTO> expResult = null;
-        ArrayList<TaiKhoanDTO> result = instance.docDB();
+        SanPhamDAO instance = new SanPhamDAO();
+        ArrayList<SanPhamDTO> expResult = null;
+        ArrayList<SanPhamDTO> result = instance.docDB();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of them method, of class TaiKhoanDAO.
+     * Test of them method, of class SanPhamDAO.
      */
     @Test
     public void testThem() throws Exception {
-        System.out.println("them");
-        TaiKhoanDTO tk = null;
-        TaiKhoanDAO instance = new TaiKhoanDAO();
-        Boolean expResult = null;
-        Boolean result = instance.them(tk);
+        SanPhamDTO hd = new SanPhamDTO("SP7", "", "","", "3", "US", "WT","AD", 0, 0, 0);
+        SanPhamDAO instance = new SanPhamDAO();
+        Boolean expResult = true;
+        Boolean result = instance.them(hd);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
-     * Test of xoa method, of class TaiKhoanDAO.
+     * Test of xoa method, of class SanPhamDAO.
      */
     @Test
     public void testXoa() throws Exception {
-        System.out.println("xoa");
-        TaiKhoanDTO tk = null;
-        TaiKhoanDAO instance = new TaiKhoanDAO();
-        Boolean expResult = null;
-        Boolean result = instance.xoa(tk);
+        SanPhamDTO hd = new SanPhamDTO("SP6", "Dép Lê", "Nam","Nam", "", "US", "WT","AD", 0, 0, 0);
+        SanPhamDAO instance = new SanPhamDAO();
+        Boolean expResult = true;
+        Boolean result = instance.xoa(hd);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
-     * Test of sua method, of class TaiKhoanDAO.
+     * Test of sua method, of class SanPhamDAO.
      */
     @Test
     public void testSua() throws Exception {
         System.out.println("sua");
-        TaiKhoanDTO tk = null;
-        TaiKhoanDAO instance = new TaiKhoanDAO();
+        SanPhamDTO hd = null;
+        SanPhamDAO instance = new SanPhamDAO();
         Boolean expResult = null;
-        Boolean result = instance.sua(tk);
+        Boolean result = instance.sua(hd);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
