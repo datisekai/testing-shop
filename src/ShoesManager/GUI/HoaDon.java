@@ -12,6 +12,7 @@ import ShoesManager.DTO.HoaDonDTO;
 import ShoesManager.DTO.KhachHangDTO;
 import ShoesManager.DTO.KhuyenMaiDTO;
 import ShoesManager.DTO.SanPhamDTO;
+import com.toedter.calendar.JDateChooser;
 import java.awt.*;
 import java.awt.event.*;
 import java.time.LocalDateTime;
@@ -34,7 +35,7 @@ public class HoaDon extends javax.swing.JFrame  implements MouseListener{
         pThongTin_ThongTin.setVisible(true);
         // các hàm xử lý sau khi vào
         kiemTraCapBac();
-        colordefault();
+        //colordefault();
         anHienCacNut(false);
         
         // hiển thị các dữ liệu table
@@ -68,12 +69,12 @@ public class HoaDon extends javax.swing.JFrame  implements MouseListener{
     private Color colorPanel_Top, colorPanel_Center, colorText;
     private JLabel[] listLblTop;
     private String[] strArr_Top;
-    private HoaDonBUS list_HD;
-    private ChiTietHDBUS list_ChiTietHD;
-    private ChiTietKMBUS list_ChiTietKM;
+    public HoaDonBUS list_HD;
+    public ChiTietHDBUS list_ChiTietHD;
+    public ChiTietKMBUS list_ChiTietKM;
     private SanPhamBUS list_SanPham;
-    private KhachHangBUS list_KH;
-    private KhuyenMaiBUS list_KM;
+    public KhachHangBUS list_KH;
+    public KhuyenMaiBUS list_KM;
     private DefaultTableModel model, modelChiTiet;
     private double TongTien;
     private HoaDonDTO hoadon;
@@ -1427,6 +1428,470 @@ public class HoaDon extends javax.swing.JFrame  implements MouseListener{
         actionButtondisplayChiTiet(tfThongTin_MaHD.getText());
     }//GEN-LAST:event_btnThongTin_TrongMouseClicked
 
+    public CacHamQuanTrong getCachamquantrong() {
+        return cachamquantrong;
+    }
+
+    public Color getColorPanel_Top() {
+        return colorPanel_Top;
+    }
+
+    public Color getColorPanel_Center() {
+        return colorPanel_Center;
+    }
+
+    public Color getColorText() {
+        return colorText;
+    }
+
+    public JLabel[] getListLblTop() {
+        return listLblTop;
+    }
+
+    public String[] getStrArr_Top() {
+        return strArr_Top;
+    }
+
+    public HoaDonBUS getList_HD() {
+        return list_HD;
+    }
+
+    public ChiTietHDBUS getList_ChiTietHD() {
+        return list_ChiTietHD;
+    }
+
+    public ChiTietKMBUS getList_ChiTietKM() {
+        return list_ChiTietKM;
+    }
+
+    public SanPhamBUS getList_SanPham() {
+        return list_SanPham;
+    }
+
+    public KhachHangBUS getList_KH() {
+        return list_KH;
+    }
+
+    public KhuyenMaiBUS getList_KM() {
+        return list_KM;
+    }
+
+    public DefaultTableModel getModel() {
+        return model;
+    }
+
+    public DefaultTableModel getModelChiTiet() {
+        return modelChiTiet;
+    }
+
+    public double getTongTien() {
+        return TongTien;
+    }
+
+    public HoaDonDTO getHoadon() {
+        return hoadon;
+    }
+
+    public String[] getStrMonths() {
+        return strMonths;
+    }
+
+    public String getDate1() {
+        return date1;
+    }
+
+    public int getX_Mouse() {
+        return x_Mouse;
+    }
+
+    public int getY_Mouse() {
+        return y_Mouse;
+    }
+
+    public JMenu getMenuMauNen() {
+        return MenuMauNen;
+    }
+
+    public JButton getBtnChiTiet_Sua() {
+        return btnChiTiet_Sua;
+    }
+
+    public JButton getBtnChiTiet_TaoMoi() {
+        return btnChiTiet_TaoMoi;
+    }
+
+    public JButton getBtnChiTiet_Them() {
+        return btnChiTiet_Them;
+    }
+
+    public JButton getBtnChiTiet_Xoa() {
+        return btnChiTiet_Xoa;
+    }
+
+    public JButton getBtnThongTin_Sua1() {
+        return btnThongTin_Sua1;
+    }
+
+    public JButton getBtnThongTin_Them() {
+        return btnThongTin_Them;
+    }
+
+    public JButton getBtnThongTin_Trong() {
+        return btnThongTin_Trong;
+    }
+
+    public JButton getBtnThongTin_Xoa() {
+        return btnThongTin_Xoa;
+    }
+
+    public JButton getBtnTimKiem_HuyTimKiem() {
+        return btnTimKiem_HuyTimKiem;
+    }
+
+    public JButton getBtnTimKiem_TimKiem() {
+        return btnTimKiem_TimKiem;
+    }
+
+    public JButton getBtnTimKiem_Trong1() {
+        return btnTimKiem_Trong1;
+    }
+
+    public ButtonGroup getButtonGroup1() {
+        return buttonGroup1;
+    }
+
+    public ButtonGroup getButtonGroup2() {
+        return buttonGroup2;
+    }
+
+    public ButtonGroup getButtonGroup3() {
+        return buttonGroup3;
+    }
+
+    public ButtonGroup getButtonGroup_MauNen() {
+        return buttonGroup_MauNen;
+    }
+
+    public JDateChooser getCalendarThongTin() {
+        return calendarThongTin;
+    }
+
+    public JComboBox<String> getCbbThongTin_MaKH() {
+        return cbbThongTin_MaKH;
+    }
+
+    public JComboBox<String> getCbbThongTin_MaKM() {
+        return cbbThongTin_MaKM;
+    }
+
+    public JButton getjButton4() {
+        return jButton4;
+    }
+
+    public JButton getjButton5() {
+        return jButton5;
+    }
+
+    public JButton getjButton6() {
+        return jButton6;
+    }
+
+    public JScrollPane getjScrollPane2() {
+        return jScrollPane2;
+    }
+
+    public JScrollPane getjScrollPane3() {
+        return jScrollPane3;
+    }
+
+    public JLabel getLblChiTiet_3cham() {
+        return lblChiTiet_3cham;
+    }
+
+    public JLabel getLblChiTiet_3cham1() {
+        return lblChiTiet_3cham1;
+    }
+
+    public JLabel getLblChiTiet_3cham2() {
+        return lblChiTiet_3cham2;
+    }
+
+    public JLabel getLblChiTiet_ChiTietHoaDon() {
+        return lblChiTiet_ChiTietHoaDon;
+    }
+
+    public JLabel getLblChiTiet_Gia() {
+        return lblChiTiet_Gia;
+    }
+
+    public JLabel getLblChiTiet_MaHD() {
+        return lblChiTiet_MaHD;
+    }
+
+    public JLabel getLblChiTiet_MaSP() {
+        return lblChiTiet_MaSP;
+    }
+
+    public JLabel getLblChiTiet_MaSP1() {
+        return lblChiTiet_MaSP1;
+    }
+
+    public JLabel getLblChiTiet_SL() {
+        return lblChiTiet_SL;
+    }
+
+    public JLabel getLblChiTiet_SoLuong2() {
+        return lblChiTiet_SoLuong2;
+    }
+
+    public JLabel getLblChiTiet_Tatca() {
+        return lblChiTiet_Tatca;
+    }
+
+    public JLabel getLblChiTiet_Xuat() {
+        return lblChiTiet_Xuat;
+    }
+
+    public JLabel getLblMuiTen() {
+        return lblMuiTen;
+    }
+
+    public JLabel getLblMuiTen1() {
+        return lblMuiTen1;
+    }
+
+    public JLabel getLblThongTin_MaHD() {
+        return lblThongTin_MaHD;
+    }
+
+    public JLabel getLblThongTin_MaHD1() {
+        return lblThongTin_MaHD1;
+    }
+
+    public JLabel getLblThongTin_MaKH() {
+        return lblThongTin_MaKH;
+    }
+
+    public JLabel getLblThongTin_MaKH1() {
+        return lblThongTin_MaKH1;
+    }
+
+    public JLabel getLblThongTin_MaKM() {
+        return lblThongTin_MaKM;
+    }
+
+    public JLabel getLblThongTin_MaKM1() {
+        return lblThongTin_MaKM1;
+    }
+
+    public JLabel getLblThongTin_MaNV() {
+        return lblThongTin_MaNV;
+    }
+
+    public JLabel getLblThongTin_MaNV1() {
+        return lblThongTin_MaNV1;
+    }
+
+    public JLabel getLblThongTin_NgayBan() {
+        return lblThongTin_NgayBan;
+    }
+
+    public JLabel getLblThongTin_ThongTin() {
+        return lblThongTin_ThongTin;
+    }
+
+    public JLabel getLblThongTin_TimKiem() {
+        return lblThongTin_TimKiem;
+    }
+
+    public JLabel getLblThongTin_TongTien() {
+        return lblThongTin_TongTien;
+    }
+
+    public JLabel getLblThongTin_TongTien1() {
+        return lblThongTin_TongTien1;
+    }
+
+    public JMenu getMenuTaiKhoan() {
+        return menuTaiKhoan;
+    }
+
+    public JMenuItem getMenuTaiKhoan_DangXuat() {
+        return menuTaiKhoan_DangXuat;
+    }
+
+    public JMenuItem getMenuTaiKhoan_ThongTin() {
+        return menuTaiKhoan_ThongTin;
+    }
+
+    public JMenu getMenuThanhCongcu() {
+        return menuThanhCongcu;
+    }
+
+    public JMenu getMenuThoat() {
+        return menuThoat;
+    }
+
+    public JMenu getMenuTroVe() {
+        return menuTroVe;
+    }
+
+    public JMenuBar getMenubar() {
+        return menubar;
+    }
+
+    public JPanel getpCenter() {
+        return pCenter;
+    }
+
+    public JPanel getpChiTiet() {
+        return pChiTiet;
+    }
+
+    public JPanel getpChiTietSanPham() {
+        return pChiTietSanPham;
+    }
+
+    public JPanel getpChiTietTimKiem() {
+        return pChiTietTimKiem;
+    }
+
+    public JPanel getpThongTin() {
+        return pThongTin;
+    }
+
+    public JPanel getpThongTin_ThongTin() {
+        return pThongTin_ThongTin;
+    }
+
+    public JPanel getpThongTin_TimKiem() {
+        return pThongTin_TimKiem;
+    }
+
+    public JPanel getpTop() {
+        return pTop;
+    }
+
+    public JRadioButton getRdbtnCT_Giam() {
+        return rdbtnCT_Giam;
+    }
+
+    public JRadioButton getRdbtnCT_Giam1() {
+        return rdbtnCT_Giam1;
+    }
+
+    public JRadioButton getRdbtnCT_Khong() {
+        return rdbtnCT_Khong;
+    }
+
+    public JRadioButton getRdbtnCT_Khong2() {
+        return rdbtnCT_Khong2;
+    }
+
+    public JRadioButton getRdbtnCT_Tang() {
+        return rdbtnCT_Tang;
+    }
+
+    public JRadioButton getRdbtnCT_Tang1() {
+        return rdbtnCT_Tang1;
+    }
+
+    public JRadioButton getRdbtnThongTin_Giam() {
+        return rdbtnThongTin_Giam;
+    }
+
+    public JRadioButtonMenuItem getRdbtnThongTin_MauCam() {
+        return rdbtnThongTin_MauCam;
+    }
+
+    public JRadioButtonMenuItem getRdbtnThongTin_MauDen() {
+        return rdbtnThongTin_MauDen;
+    }
+
+    public JRadioButtonMenuItem getRdbtnThongTin_Mautrang() {
+        return rdbtnThongTin_Mautrang;
+    }
+
+    public JRadioButton getRdbtnThongTin_Tang() {
+        return rdbtnThongTin_Tang;
+    }
+
+    public JTable getTblThongTin() {
+        return tblThongTin;
+    }
+
+    public JTable getTblThongTin1() {
+        return tblThongTin1;
+    }
+
+    public JTextField getTfChiTiet_Gia() {
+        return tfChiTiet_Gia;
+    }
+
+    public JTextField getTfChiTiet_MaHD() {
+        return tfChiTiet_MaHD;
+    }
+
+    public JTextField getTfChiTiet_MaSP() {
+        return tfChiTiet_MaSP;
+    }
+
+    public JTextField getTfChiTiet_MaSP2() {
+        return tfChiTiet_MaSP2;
+    }
+
+    public JTextField getTfChiTiet_MaSP3() {
+        return tfChiTiet_MaSP3;
+    }
+
+    public JTextField getTfChiTiet_SL() {
+        return tfChiTiet_SL;
+    }
+
+    public JTextField getTfChiTiet_SL2() {
+        return tfChiTiet_SL2;
+    }
+
+    public JTextField getTfChiTiet_SL3() {
+        return tfChiTiet_SL3;
+    }
+
+    public JTextField getTfThongTin_MaHD() {
+        return tfThongTin_MaHD;
+    }
+
+    public JTextField getTfThongTin_MaNV() {
+        return tfThongTin_MaNV;
+    }
+
+    public JTextField getTfThongTin_TenKH() {
+        return tfThongTin_TenKH;
+    }
+
+    public JTextField getTfThongTin_TongTien() {
+        return tfThongTin_TongTien;
+    }
+
+    public JTextField getTfTimKiem_MaHD1() {
+        return tfTimKiem_MaHD1;
+    }
+
+    public JTextField getTfTimKiem_MaKH1() {
+        return tfTimKiem_MaKH1;
+    }
+
+    public JTextField getTfTimKiem_MaKM1() {
+        return tfTimKiem_MaKM1;
+    }
+
+    public JTextField getTfTimKiem_MaNV1() {
+        return tfTimKiem_MaNV1;
+    }
+
+    public JTextField getTfTimKiem_TongTien1() {
+        return tfTimKiem_TongTien1;
+    }
+
     private void tfThongTin_MaHDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tfThongTin_MaHDMouseClicked
         // TODO add your handling code here:
         System.out.println("Click here PLae");
@@ -2330,7 +2795,7 @@ public class HoaDon extends javax.swing.JFrame  implements MouseListener{
         }
     }
     
-    private void actionButtondisplay() {
+    public void actionButtondisplay() {
         model = new DefaultTableModel();
         
         createVectorHeader();
@@ -2373,7 +2838,7 @@ public class HoaDon extends javax.swing.JFrame  implements MouseListener{
         }
     }
     
-    private void actionButtondisplayChiTiet() {
+    public void actionButtondisplayChiTiet() {
         actionButtondisplayChiTiet("null");
     }
     

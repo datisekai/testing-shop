@@ -50,6 +50,20 @@ public class Sanpham extends javax.swing.JFrame  implements MouseListener {
         
       
     }
+    public void NhapSanphamMoi(String MaSP, String TenGiay, String ChatLieu, String DoiTuong, String Gia, String Size, int ML, int MM,int MXX,int MTH) {
+
+        this.tfMaGiay.setText(MaSP);
+        this.tfChatLieu.setText(ChatLieu);
+        this.tfDoiTuongSD.setText(DoiTuong);
+        this.tfGia.setText(Gia);
+        this.tfSize.setText(Size);
+        this.tfTenGiay.setText(TenGiay);
+        this.cbbThongtin_MaLoai.setSelectedIndex(ML);
+        this.cbbThongtin_MaMau.setSelectedIndex(MM);
+        this.cbbThongtin_MaXX.setSelectedIndex(MXX);
+        this.cbbThongtin_MaThuongHieu.setSelectedIndex(MTH);
+        
+    }
     
     private Color colorPanel_Top, colorPanel_Center, colorText;
     private JLabel[] listLblTop;
@@ -1364,6 +1378,287 @@ public class Sanpham extends javax.swing.JFrame  implements MouseListener {
                 }
             };;
         }
+    }
+    
+    
+     public Color getColorPanel_Top() {
+        return colorPanel_Top;
+    }
+
+    public Color getColorPanel_Center() {
+        return colorPanel_Center;
+    }
+
+    public Color getColorText() {
+        return colorText;
+    }
+
+    public JLabel[] getListLblTop() {
+        return listLblTop;
+    }
+
+    public String[] getStrArr_Top() {
+        return strArr_Top;
+    }
+
+    public SanPhamBUS getList_SP() {
+        return list_SP;
+    }
+
+    public DefaultTableModel getModel() {
+        return model;
+    }
+
+    public int getX_Mouse() {
+        return x_Mouse;
+    }
+
+    public int getY_Mouse() {
+        return y_Mouse;
+    }
+
+    public JMenu getMenuMauNen() {
+        return MenuMauNen;
+    }
+
+    public JButton getBtnHuyTimKiem() {
+        return btnHuyTimKiem;
+    }
+
+    public JButton getBtnLuu() {
+        return btnLuu;
+    }
+
+    public JButton getBtnReset() {
+        return btnReset;
+    }
+
+    public JButton getBtnSua() {
+        return btnSua;
+    }
+
+    public JButton getBtnThem() {
+        return btnThem;
+    }
+
+    public JButton getBtnTimKiem() {
+        return btnTimKiem;
+    }
+
+    public JButton getBtnXoa() {
+        return btnXoa;
+    }
+
+    public ButtonGroup getButtonGroup1() {
+        return buttonGroup1;
+    }
+
+    public ButtonGroup getButtonGroup2() {
+        return buttonGroup2;
+    }
+
+    public ButtonGroup getButtonGroup3() {
+        return buttonGroup3;
+    }
+
+    public ButtonGroup getButtonGroup_MauNen() {
+        return buttonGroup_MauNen;
+    }
+
+    public JComboBox<String> getCbbThongtin_MaLoai() {
+        return cbbThongtin_MaLoai;
+    }
+
+    public JComboBox<String> getCbbThongtin_MaMau() {
+        return cbbThongtin_MaMau;
+    }
+
+    public JComboBox<String> getCbbThongtin_MaThuongHieu() {
+        return cbbThongtin_MaThuongHieu;
+    }
+
+    public JComboBox<String> getCbbThongtin_MaXX() {
+        return cbbThongtin_MaXX;
+    }
+
+    public JComboBox<String> getCbbTimKiem_MaLoai() {
+        return cbbTimKiem_MaLoai;
+    }
+
+    public JComboBox<String> getCbbTimKiem_MaMau() {
+        return cbbTimKiem_MaMau;
+    }
+
+    public JComboBox<String> getCbbTimKiem_MaThuongHieu() {
+        return cbbTimKiem_MaThuongHieu;
+    }
+
+    public JComboBox<String> getCbbTimKiem_MaXX() {
+        return cbbTimKiem_MaXX;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JLabel getjLabel10() {
+        return jLabel10;
+    }
+
+    public JLabel getjLabel11() {
+        return jLabel11;
+    }
+
+    public JLabel getjLabel13() {
+        return jLabel13;
+    }
+
+    public JLabel getjLabel19() {
+        return jLabel19;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public JLabel getjLabel20() {
+        return jLabel20;
+    }
+
+    public JLabel getjLabel21() {
+        return jLabel21;
+    }
+
+    public JLabel getjLabel22() {
+        return jLabel22;
+    }
+
+    public JLabel getjLabel3() {
+        return jLabel3;
+    }
+
+    public JLabel getjLabel4() {
+        return jLabel4;
+    }
+
+    public JLabel getjLabel5() {
+        return jLabel5;
+    }
+
+    public JLabel getjLabel6() {
+        return jLabel6;
+    }
+
+    public JLabel getjLabel7() {
+        return jLabel7;
+    }
+
+    public JLabel getjLabel8() {
+        return jLabel8;
+    }
+
+    public JLabel getjLabel9() {
+        return jLabel9;
+    }
+
+    public JScrollPane getjScrollPane2() {
+        return jScrollPane2;
+    }
+
+    public JMenu getMenuTaiKhoan() {
+        return menuTaiKhoan;
+    }
+
+    public JMenuItem getMenuTaiKhoan_DangXuat() {
+        return menuTaiKhoan_DangXuat;
+    }
+
+    public JMenuItem getMenuTaiKhoan_ThongTin() {
+        return menuTaiKhoan_ThongTin;
+    }
+
+    public JMenu getMenuThanhCongcu() {
+        return menuThanhCongcu;
+    }
+
+    public JMenu getMenuThoat() {
+        return menuThoat;
+    }
+
+    public JMenu getMenuTroVe() {
+        return menuTroVe;
+    }
+
+    public JMenuBar getMenubar() {
+        return menubar;
+    }
+
+    public JPanel getpCenter() {
+        return pCenter;
+    }
+
+    public JPanel getpTable() {
+        return pTable;
+    }
+
+    public JPanel getpThongTin() {
+        return pThongTin;
+    }
+
+    public JPanel getpTimKiem() {
+        return pTimKiem;
+    }
+
+    public JPanel getpTop() {
+        return pTop;
+    }
+
+    public JRadioButtonMenuItem getRdbtnThongTin_MauCam() {
+        return rdbtnThongTin_MauCam;
+    }
+
+    public JRadioButtonMenuItem getRdbtnThongTin_MauDen() {
+        return rdbtnThongTin_MauDen;
+    }
+
+    public JRadioButtonMenuItem getRdbtnThongTin_Mautrang() {
+        return rdbtnThongTin_Mautrang;
+    }
+
+    public JTable getTblThongTin() {
+        return tblThongTin;
+    }
+
+    public JTextField getTfChatLieu() {
+        return tfChatLieu;
+    }
+
+    public JTextField getTfDoiTuongSD() {
+        return tfDoiTuongSD;
+    }
+
+    public JTextField getTfGia() {
+        return tfGia;
+    }
+
+    public JTextField getTfMaGiay() {
+        return tfMaGiay;
+    }
+
+    public JTextField getTfSize() {
+        return tfSize;
+    }
+
+    public JTextField getTfSoLuong() {
+        return tfSoLuong;
+    }
+
+    public JTextField getTfTenGiay() {
+        return tfTenGiay;
+    }
+
+    public JTextField getTfTimKiem_TenGiay() {
+        return tfTimKiem_TenGiay;
     }
     
     private void actionButtondisplay() {
